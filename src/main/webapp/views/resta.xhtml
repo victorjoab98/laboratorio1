@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./../template/template.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="content">
+        <h2>Operación Resta</h2>
+        <h:form>
+            <h3>Ingrese los números que desea restar</h3>
+            <table>
+                <tr>
+                    <td>Numero 1</td>
+                    <td>
+                        <h:inputText value="#{operar.numero1}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numero 2</td>
+                    <td> <h:inputText value="#{operar.numero2}"/> </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <h:commandButton value="Restar" action="#{operar.resta()}"></h:commandButton>
+                    </td>
+                </tr>
+            </table>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

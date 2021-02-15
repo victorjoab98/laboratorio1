@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet name="css/style.css"/>
+        <title>Operaciones</title>
+    </h:head>
+    
+    <h:body>
+
+        <div class="header">
+          <h1>Operaciones Aritméticas</h1>
+          <p>Realiza las cuatro operaciones aritméticas.</p>
+        </div>
+
+        <div class="topnav">
+            <h:link value="Suma" outcome="/views/suma.xhmtl"/>
+            <h:link value="Resta" outcome="/views/resta"/>
+            <h:link value="Multiplicación" outcome="/views/multiplicacion"/>
+            <h:link value="División" outcome="/views/division"/>
+        </div>
+        
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+            <div class="card">
+                <ui:insert name="result"></ui:insert>
+            </div>
+        </div>
+          
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>JSF</h2>
+                <p>JavaServer Faces, es un framework que permite a los desarrolladores construir interfaces de usuario para aplicaciones JavaServer.</p>
+            </div>
+            <div class="card">
+                <h3>Tecnologías Usadas</h3>
+                <ol>
+                    <li>JSF</li>
+                    <li>Maven</li>
+                    <li>Git</li>
+                    <li>TestNg</li>
+                    <li>Selenium</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <h2>Operaciones Aritméticas 2021</h2>
+        </div>
+
+    </h:body>
+    
+    
+    
+    
+    
+    
+
+
+<!--    <h:body>
+
+        <div id="top">
+            
+        </div>
+
+        <div id="content" class="center_content">
+            
+        </div>
+
+        <div id="bottom">
+            <ui:insert name="bottom">Bottom</ui:insert>
+        </div>
+
+    </h:body>-->
+
+</html>
