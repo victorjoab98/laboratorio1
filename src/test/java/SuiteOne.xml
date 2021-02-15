@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="com.mycompany_laboratorio_war_1.0-SNAPSHOT">
+    <test name="All tests for com.mycompany_laboratorio_war_1.0-SNAPSHOT">
+        <clases>
+            <class name="TestOperaciones"/>
+        </clases>
+    </test>
+</suite>
+
+<suite name="CrossBrowser Suite">
+    <test name="Test CrossBrowser">
+        <clases>
+            <class name="TestCrossBrowser"/>
+        </clases>
+    </test>
+</suite>

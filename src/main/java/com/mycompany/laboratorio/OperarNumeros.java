@@ -19,6 +19,11 @@ public class OperarNumeros implements Serializable{
     private String numero1, numero2;
     private int resultado;
     private int num1, num2;
+
+    public OperarNumeros() {
+    }
+    
+    
     
     private void convertirNumeros (){
         try {
